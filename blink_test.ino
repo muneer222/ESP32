@@ -58,13 +58,6 @@ void MEASUREWATERLEVEL() {
   WaterLevelValue = analogRead(LevelSensorPin);  //Read data from analog pin and store it to WaterLevelvalue variable
 
   
-  // for (int i = 0; i < 6 ; i++) {
-    
-  //   if ((WaterLevelValue > (LEVELarray[i] * 0.96)) && (WaterLevelValue < (LEVELarray[i] * 1.04)))              // allow a margin of 4% on the measured values to eliminate jitter and noise
-  //   {
-  //     level = i;
-  //   }  
-  // }
 
   digitalWrite(output27, LOW);           // make pin 27 LOW
   Serial.print("WaterLevelValue: ") ;Serial.print(WaterLevelValue);Serial.println();
